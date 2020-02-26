@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        body {
+            background-color: rgb(58, 58, 58);
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .pLogo {
+            color: rgb(255, 255, 255);
+            font-size: 33px;
+            font-weight: 700;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .pInfo {
+            font-size: 16px;
+            line-height: 1px;
+            font-weight: 400;
+        }
+
+        .divGetImg {
+            color: white;
+            width: 500px;
+            height: auto;
+            padding: 2rem 1.25rem;
+            position: relative;
+            background-color: #50b9f6;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .divLogo {
+            line-height: 0;
+            margin-bottom: 25px;
+        }
+
+        .divResult {
+            width: 500px;
+            height: auto;
+            padding: 2rem 1.25rem;
+            position: relative;
+            background-color: #50b9f6;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .divUpload {
+            color: black;
+            width: 260px;
+            height: 30px;
+            padding: 5px;
+            margin: 30px auto;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #divRes {
+            color: black;
+            width: 500px;
+            height: auto;
+            padding: 1rem 1.25rem;
+            position: relative;
+            background-color: rgb(195, 237, 253);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        div {
+            margin: 0 auto;
+            display: block;
+        }
+
+        #pRes {
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        #divStartAnal {
+            width: 150px;
+            padding: 10px 0;
+            background-color: rgb(36, 127, 180);
+            color: white;
+            border: 2px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .startAnal {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .line {
+            border-color: rgb(44, 152, 224);
+            border-width: 1px;
+            border-style: solid;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            ;
+        }
+
+        .line2 {
+            border-color: darkgrey;
+            border-width: 1px;
+            border-style: solid;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            ;
+        }
+
+        .pWord {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        #submitBt{
+        display: none;}
+
+        #pErr{
+        color: darkred;}

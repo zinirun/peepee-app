@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>피피 - 인공지능 소변분석</title>
+    <script src="{{ url_for('static', filename='js/module.js') }}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body onload="printResult();">
+    <div class="divGetImg">
+        <div class="divLogo">
+            <p class="pLogo">피피💦</p>
+            <p class="pInfo">인공지능 소변분석</p>
+        </div>
+        <hr class="line">
+        <p class="pWord">분석이 완료되었습니다.<br>
+            <p class="pInfo">재분석하려면 이미지를 다시 업로드하세요!</p>
+            <p id="pErr">{{ data }}</p>
+            <div class="divUpload">
+                <form id="upForm" action="http://localhost:5000/fileUpload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" />
+                    <input id="submitBt" value="업로드" type="submit" />
+                </form>
+            </div>
+            <div id="divStartAnal" onclick="uploadMod();" style="cursor: pointer;"
+                onmouseover="this.style.background='lightblue'; this.style.color='black';"
+                onmouseout="this.style.background=''; this.style.color=''">
+                <span class="startAnal">새로운 분석</span>
+            </div>
+    </div>
+    <div id="divRes">
+        <p class="pWord">분석 결과</p><hr class="line2">
+        <p id="pPeeType">{{peeValue}}</p>
+        <p id="pRes"></p>
+    </div>
+
+        <div id="divCopyright">
+        <p class="pInfo" style="color: grey; line-height:1.5em;">BY ZINI&YOUNG AT DANKOOK UNIV.</p>
+    </div>
+
+    <script>
+        var peeValue = {{peeValue|tojson}};
+        function printResult() {
+            var typeText = document.getElementById('pPeeType');
+            var resText = document.getElementById('pRes');
+            var div = document.getElementById('divRes');
+            if (peeValue > 9 || peeValue < 0) {
+                resText.innerHTML = "파일 분석 중 오류가 발생했습니다.";
+                return false;
+            }
+            typeText.innerHTML = "소변 타입: " + typeWord[peeValue];
+            resText.innerHTML = res[peeValue];
+            div.style.background = colorSet[peeValue];
+        }
+    </script>
+</body>
+</html>
