@@ -18,7 +18,7 @@
             <p class="pInfo">재분석하려면 이미지를 다시 업로드하세요!</p>
             <p id="pErr">{{ data }}</p>
             <div class="divUpload">
-                <form id="upForm" action="http://localhost:5000/fileUpload" method="POST" enctype="multipart/form-data">
+                <form id="upForm" action="/fileUpload" method="POST" enctype="multipart/form-data">
                     <input type="file" name="file" />
                     <input id="submitBt" value="업로드" type="submit" />
                 </form>
