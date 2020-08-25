@@ -1,4 +1,4 @@
-# PeePee-App
+# peepee-app
 Pee Analysis with OpenCV (Flask, Web)
 
 ## 피피 개발의 시작
